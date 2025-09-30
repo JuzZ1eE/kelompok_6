@@ -35,14 +35,14 @@ const output = document.getElementById("output");
 daftar_kursus.forEach((k, index) => {
   // ke UL
   const li = document.createElement("li");
-  li.textContent = `${k.nama} – Rp${k.harga}/bulan`;
+  li.textContent = `${k.nama}   Rp${k.harga}/bulan`;
   list_kursus.appendChild(li);
 
   // ke select
   const option = document.createElement("option");
   option.value = index;
-  option.textContent = `${k.nama} – Rp${k.harga}/bulan`;
-  pilih_kursus.appendChild(option);
+  option.textContent = `${k.nama}   Rp${k.harga}/bulan`;
+  pilih_kursus.appendChild(option); 
 });
 
 
@@ -65,5 +65,5 @@ form.addEventListener("submit", function (e) {
     Kursus: ${pendaftar.kursus.nama} <br>
     Durasi: ${pendaftar.durasi} bulan <br>
     Total Biaya: Rp${pendaftar.hitung_total().toLocaleString()}
-  `;
+    `;
 });
