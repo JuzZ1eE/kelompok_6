@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bimbel Online</title>
+</head>
+<body style="font-family: Arial; padding:20px;">
+    <h1>Welcome to Bimbel Online 📚</h1>
+
+    <h2>📋 Daftar Kursus</h2>
+    <ul id="list_kursus"></ul>
+   
+    <h3>📝 Form Pendaftaran</h3>
+<form id="form_pendaftaran">
+  <label for="nama">Nama Lengkap:</label><br>
+  <input type="text" id="nama" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" required><br><br>
+
+  <label for="pilih_kursus">Pilih Kursus:</label><br>
+  <select id="pilih_kursus"></select><br><br>
+
+  <label for="bulan">Durasi (bulan):</label><br>
+  <input type="number" id="bulan" min="1" value="1"><br><br>
+
+  <button type="submit">Daftar</button>
+</form>
+    <div id="output"></div>
+    <script src="main.js"></script>
+</body>
+</html>
